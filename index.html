@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>2048</title>
+		<link rel="stylesheet" type="text/css" href="2048.css"/>
+	</head>
+	<body id="toucher">
+		<!--标题-->
+		<header><h2>2048</h2></header>
+		<!--游戏面板-->
+		<div id="gamePanel">
+			<!--开始按钮和游戏记录-->
+			<p>
+				<a href="" class="button" id="newGame">新游戏</a>
+				记录：
+				<span id="score">0</span>
+			</p>
+			<!--格子面板-->
+			<div id="gridPanel" class="list-item">
+				<!--背景格子-->
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<!--带数字的格子-->
+				<div class="cell num2" id="cell00">2</div>
+				<div class="cell num4" id="cell01">4</div>
+				<div class="cell num8" id="cell02">8</div>
+				<div class="cell num16" id="cell03">16</div>
+				<div class="cell num32" id="cell10">32</div>
+				<div class="cell num64" id="cell11">64</div>
+				<div class="cell num128" id="cell12">128</div>
+				<div class="cell num256" id="cell13">256</div>
+				<div class="cell num512" id="cell20">512</div>
+				<div class="cell num1024" id="cell21">1024</div>
+				<div class="cell num2048" id="cell22">2048</div>
+				<div class="cell num4096" id="cell23">4096</div>
+				<div class="cell num8192" id="cell30">8192</div>
+				<div class="cell num16384" id="cell31">16384</div>
+				<div class="cell num32768" id="cell32">32768</div>
+				<div class="cell num65536" id="cell33">65536</div>
+			</div>
+			<!--游戏结束的面板-->
+			<div id="gameOver">
+				<!--黑色背景-->
+				<div id=""></div>
+				<p>
+					<!--前景-->
+					Game Over<br />
+					Score: <span id="finalScore">0</span><br />
+					<a href="" class="button" id="restart">再来一局</a>
+				</p>
+			</div>
+		</div>
+		
+		<table id="control">
+			<tr>
+				<td></td>
+				<td><input type="button" value="up" id="up"/></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="left" id="left"/></td>
+				<td></td>
+				<td><input type="button" value="rigth" id="rigth"/></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="button" value="down" id="down"/></td>
+				<td></td>
+			</tr>
+		</table>
+	</body>
+</html>
+
+<script type="text/javascript" src="toucher.js"></script>
+<script type="text/javascript" src="2048.js"></script>
+
+<script type="text/javascript" >
+
+
+</script>

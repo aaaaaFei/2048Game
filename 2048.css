@@ -1,0 +1,215 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+/*字体*/
+div,p,h1,h2,a,span{
+	font-family: arial,"微软雅黑";
+	font-weight: bold;
+}
+header h2{
+	font-size: 40px;
+	text-align: center;
+	color: #bbada0;
+	box-shadow: 5px 5px 5px silver;
+	margin-bottom: 15px; 
+	line-height: 50px;
+	background-color: #EAEAEA;
+	text-shadow:0 3px 3px #999;
+}
+a{
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+html,body{
+	height: 100%;
+	width: 100%;
+	background-image: url(bg.jpg);
+	/*background-color: silver;*/
+}
+/*游戏面板*/
+#gamePanel{
+	margin:0 auto;
+	width:328px;
+	position: relative;
+}
+#gamePanel p{
+	color: goldenrod;
+
+}
+#gridPanel{
+	width: 308px;
+	height: 308px;
+	position: relative;
+	border-radius: 10px;
+	background-color: #bbada0;
+	padding: 20px 0 0 20px;
+}
+/*按钮样式*/
+.button{
+	display: inline-block;
+	padding: 5px;
+	border-radius: 6px;
+	color: #fff;
+	background-color: #9f8b77;
+	cursor: pointer;
+}
+.grid,.cell{
+	width:62.5px;
+	height: 62.5px;
+	border-radius: 6px;
+}
+.grid{
+	background-color: #ccc0b3;
+	float: left;
+	margin: 0 12.5px 12.5px 0;
+}
+.cell{
+	position: absolute;
+	line-height: 62.5px;
+	text-align: center;
+	font-size: 50px;
+	color:#776e65;
+	margin: 7.5px 12.5px 12.5px 0;
+}
+/*第一行*/
+#cell00,#cell01,#cell02,#cell03{
+	top:12.5px;
+}
+#cell10,#cell11,#cell12,#cell13{
+	top:87.5px;
+}
+#cell20,#cell21,#cell22,#cell23{
+	top:162.5px;
+}
+#cell30,#cell31,#cell32,#cell33{
+	top:237.5px;
+} 
+#cell01,#cell11,#cell21,#cell31{
+	margin-left: 75px;
+}
+#cell02,#cell12,#cell22,#cell32{
+	margin-left: 150px;
+}
+#cell03,#cell13,#cell23,#cell33{
+	margin-left: 225px;
+}
+/*数字显示效果*/
+.num8,.num16,.num32,.num64,.num128,.num256,.num512,.num1024,.num2048,.num4096{
+	color: width;
+}
+.num16,.num32,.num64{
+	font-size: 40px;
+}
+.num128,.num256,.num512{
+	font-size: 30px;
+}
+.num1024,.num2048,.num4096,.num2048,.num4096,.num8192{
+	font-size: 24px;
+}
+.num16384,.num32768,.num65536{
+	font-size: 19px;
+}
+	
+.num2{
+	background-color: #eee4da;
+}
+.num4{
+	background-color: #ed0c8;
+}
+.num8{
+	background-color: #f2b179;
+}
+.num16{
+	background-color: #f59563;
+}
+.num32{
+	background-color: #f67c5f;
+}
+.num64{
+	background-color: #f65e3d;
+}
+.num128{
+	background-color: #edcf72;
+}
+.num256{
+	background-color: #edcc61;
+}
+.num512{
+	background-color: #9c0;
+}
+.num1024{
+	background-color: #33b5e5;
+}
+.num2048{
+	background-color: #005EA7;
+}
+.num4096{
+	background-color: #008000;
+}
+.num8192{
+	background-color: #F59563;
+}
+.num16384{
+	background-color: #EDCF72;
+}
+.num32768{
+	background-color: #FFD700;
+}
+.num65536{
+	background-color: #000;
+}
+
+#gameOver{
+	position: absolute;
+	top: 0;
+	left:0;
+	width:328px;
+	height: 368px;
+	display: none;
+	border-radius: 10px;
+}
+/*/*黑色遮罩层*/    /*绝对定位不继承*/
+#gameOver div{
+	width:100%;
+	height: 100%;
+	background-color: #555;
+	opacity: 0.6;
+	border-radius: 10px;
+	
+}
+#gameOver p{
+	position: absolute;
+	top:150px;
+	left: 90px;
+	text-align: center;
+	color: #FFFF;
+	font-size: 30px;
+}
+#gridPanel div{
+	box-shadow: 1px 1px 3px silver;
+
+}
+/*/控制按钮*/
+
+body{
+	position: relative;
+}
+#control{
+	position: absolute;
+	left: 50%;
+	margin-left: -150px;
+	top: 440px;
+	
+}
+#control input{
+	background-color: #9f8b77;
+	border-radius:50%;
+	line-height: 30px;
+	font-size: 20px;
+	color: #fff;
+	width: 100px;
+	height: 40px;
+	outline: none;
+	text-align: center;
+}
